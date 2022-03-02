@@ -1,0 +1,22 @@
+{
+    "name": "tuefekci/novelsource",
+    "type": "library",
+    "require": {
+        "tuefekci/helpers" : "dev-main",
+        "guzzlehttp/guzzle": "*",
+        "paquettg/php-html-parser": "^3.1",
+        "matthiasmullie/scrapbook": "^1.4",
+        "league/flysystem": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tuefekci\\NovelSource\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Giacomo Tüfekci",
+            "email": "kontakt@tuefekci.de"
+        }
+    ]
+}
