@@ -57,7 +57,8 @@ class SourceBase
 
 	// 	get class name of this class
 	public function getName() {
-		return (string) get_class($this);
+		$path = explode('\\', (string) get_class($this));
+		return array_pop($path);
 	}
 
 	public function cleanContent($content) {

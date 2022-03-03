@@ -22,6 +22,7 @@ class NovelSource
 		$this->initNovelSources();
 	}
 
+
 	private function initNovelSources() {
 		$moduleArgs = array(
 			'client' => $this->client,

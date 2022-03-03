@@ -53,7 +53,7 @@ class ReadNovelFull extends \Tuefekci\NovelSource\Sources\Novel
 
 			if(\tuefekci\helpers\Strings::contains($meta->find("h3")[0]->text(), "Genre")) {
 				foreach($meta->find("a") as $genre) {
-					$novel->metadata[] = new \Tuefekci\NovelSource\Models\Metadata(['name' => 'genre', 'value' => strtolower($genre->text())]);
+					$novel->metadata[] = new \Tuefekci\NovelSource\Models\Metadata(['name' => 'genre', 'value' => $genre->text()]);
 				}
 			}
 
