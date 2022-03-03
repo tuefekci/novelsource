@@ -55,6 +55,11 @@ class SourceBase
 		}
 	}
 
+	// 	get class name of this class
+	public function getName() {
+		return (string) get_class($this);
+	}
+
 	public function cleanContent($content) {
 		return $content;
 	}
